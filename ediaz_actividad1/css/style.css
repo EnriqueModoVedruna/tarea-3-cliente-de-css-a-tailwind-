@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary: #39810D;
+    --gray: #cdcaca;
+    --wite: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+main {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.flex-column {
+    flex-direction: column;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+
+.logo img {
+    width: 165px;
+}
+
+.input {
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid var(--gray);
+    background-color: var(--wite);
+    color: gray;
+}
+
+.button {
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button_primary {
+    background-color: var(--primary);
+    color: white;  
+}
+
+.button:hover {
+    opacity: 0.7;
+}
+
+.button_default {
+    border: 1px solid var(--gray);
+    background-color: var(--wite);
+    color: gray;
+}
+
+.m_y_m {
+    overflow: hidden;
+}
+
+.m_y_m img {
+    width: 100%;
+    object-fit: contain;
+    background-position: bottom;
+}
+
+/* seleccion.html */
+
+.two-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.seleccion {
+    display: flex;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.seleccion img{
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.cuadro {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuadro p {
+    position: absolute;
+    transform: rotate(-90deg);
+    font-size: 70px;
+    color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* mujer.html */
+
+.primeraM{
+    background-image: url(../img/modelWoman.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "poppins",sans-serif;
+    background-size: cover;
+}
+
+.cabecera{
+    display: flex;
+    padding: 25px 40px;
+    justify-content: space-between;
+    color: grey;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 40px;
+    font-weight: bold;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.usuario{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.usuario img{
+    height: 25px;
+}
+
+.rebajas{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #f5f5f5;
+    height: 85%;
+}
+
+.p1{
+    font-weight: bold;
+    font-size: 90px;
+    margin: 0;
+}
+
+.p2{
+    font-style: italic;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.p3{
+    font-size: 50px;
+}
+
+
+
+.segunda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+
+
+.catalogo{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,325px);
+    gap: 15px;
+}
+
+.catalogo p{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.datos{
+    display: flex;
+    padding-bottom: 80px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.datos :nth-child(2){
+    font-weight: bold;
+}
+
+/* hombre.html */
+
+.primeraH{
+    background-size: cover;
+    background-image: url(../img/modelMan.png);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "poppins",sans-serif;
+    color: grey;
+}
