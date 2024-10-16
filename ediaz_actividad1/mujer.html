@@ -3,87 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <!--<link rel="stylesheet" href="./css/style.css">-->
     <link rel="icon" href="./img/logo_marca.png" type="image/png">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Seccion Mujer</title>
 </head>
 <body>
 
-    <div class="primeraM">
-        <div class="cabecera">
-            <div class="menu">
-                <a href="seleccion.html">HOME</a>
-                <a href="">SHOP</a>
-            </div>
-            <div class="usuario">
-                <p>User_name</p>
-                <img src="./img/user.png">
-            </div>
+    <div class="relative bg-cover bg-center h-64" style="background-image: url('img/modelWoman.png');">
+        <!-- Cabecera con botones a la izquierda y texto/imágen de usuario a la derecha -->
+        <div class="absolute top-0 left-0 right-0 flex justify-between p-4">
+          <!-- Botones de menú a la izquierda -->
+          <div class="flex space-x-4">
+            <a href="seleccion.html" class="px-4 py-2">HOME</a>
+            <a href="" class="px-4 py-2">SHOP</a>
+          </div>
+          
+          <!-- Texto e imagen de usuario a la derecha -->
+          <div class="flex items-center space-x-4">
+            <span class="text-gray">Usuario</span>
+            <img src="img/user.png" alt="Usuario" class="w-10 h-10 rounded-full">
+          </div>
         </div>
-        <div class="rebajas">
-            <h1 class="p1">REBAJAS</h1>
-            <h1 class="p2">MIRTO MUJER</h1>
-            <h1 class="p3">-10% -20% -30% -40% -50%</h1>
+      
+        <!-- Texto centrado en el medio -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <h1 class="text-white text-4xl font-bold">REBAJAS</h1>
+            <h1 class="text-white text-4x1">MIRTO MUJER</h1>
+            <h1 class="text-white text-4xl">-10% -20% -30% -40% -50%</h1>
         </div>
-    </div>
+      </div>
 
-    <div class="segunda">
-        <img src="./img/logo_marca.png">
-    </div>
-
-    <div class="tercera">
-        <div class="catalogo">
-
-            <div class="datos">        
-                <p>Abrigo largo pliegue espalda</p>
-                <p>59,99 €</p>
-                <img src="./img/modelWoman01.png">
-            </div>
-
-            <div class="datos">
-                <p>Abrigo acolchado largo</p>
-                <p>19,99 €</p>
-                <img src="./img/modelWoman02.png">
-            </div>
-
-            <div class="datos">
-                <p>Abrigo acolchado extra largo</p>
-                <p>49,99 €</p>
-                <img src="./img/modelWoman03.png">
-            </div>
-
-            <div class="datos">
-                <p>Gabardina vaquera</p>
-                <p>69,99 €</p>
-                <img src="./img/modelWoman04.png">
-            </div>
-
-            <div class="datos">
-                <p>Abrigo paño</p>
-                <p>29,99 €</p>
-                <img src="./img/modelWoman05.png">
-            </div>
-
-            <div class="datos">
-                <p>Abrigo acolchado capucha</p>
-                <p>49,99 €</p>
-                <img src="./img/modelWoman06.png">
-            </div>
-
-            <div class="datos">
-                <p>Abrigo borreguillo</p>
-                <p>19,99 €</p>
-                <img src="./img/modelWoman07.png">
-            </div>
-
-            <div class="datos">
-                <p>Jeans skinny rotos</p>
-                <p>9,99 €</p>
-                <img src="./img/modelWoman08.png">
-            </div>
-            
+      <div class="flex justify-center my-8">
+        <img src="./img/logo_marca.png" alt="Imagen centrada" class="w-64 h-auto">
+      </div>
+      
+      <!-- Contenedor de 8 bloques con imagen y texto -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 text-center">
+        <!-- Bloque 1 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./img/modelWoman01.png" alt="Imagen 1" class="w-full h-50 object-contain">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Abrigo largo pliegue espalda</h3>
+            <p class="text-gray-600">59,99 €</p>
+          </div>
         </div>
-    </div>
+      
+        <!-- Bloque 2 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./img/modelWoman02.png" alt="Imagen 2" class="w-full h-50 object-contain">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Abrigo acolchado largo</h3>
+            <p class="text-gray-600">19,99 €</p>
+          </div>
+        </div>
+      
+        <!-- Repite este bloque 6 veces más -->
+        <!-- Bloque 3 al Bloque 8 -->
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+          <img src="./img/modelWoman03.png" alt="Imagen 3" class="w-full h-50 object-contain">
+          <div class="p-4">
+            <h3 class="text-lg font-bold">Abrigo acolchado extra largo</h3>
+            <p class="text-gray-600">69,99 €</p>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./img/modelWoman04.png" alt="Imagen 1" class="w-full h-50 object-contain">
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Gabardina vaquera</h3>
+              <p class="text-gray-600">69,99 €</p>
+            </div>
+          </div>
+        
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./img/modelWoman05.png" alt="Imagen 2" class="w-full h-50 object-contain">
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Abrigo paño</h3>
+              <p class="text-gray-600">29,99 €</p>
+            </div>
+          </div>
+        
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./img/modelWoman06.png" alt="Imagen 3" class="w-full h-50 object-contain">
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Abrigo acolchado capucha</h3>
+              <p class="text-gray-600">49,99 €</p>
+            </div>
+          </div>
+
+        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./img/modelWoman07.png" alt="Imagen 1" class="w-full h-50 object-contain">
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Abrigo borreguillo</h3>
+              <p class="text-gray-600">19,99 €</p>
+            </div>
+          </div>
+        
+          <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <img src="./img/modelWoman08.png" alt="Imagen 2" class="w-full h-50 object-contain">
+            <div class="p-4">
+              <h3 class="text-lg font-bold">Jeans skinny rotos</h3>
+              <p class="text-gray-600">9,99 €</p>
+            </div>
+          </div>
+      </div>
     
 </body>
 </html>
